@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>commit-brief — group commit subjects</title>
+  <meta name="description" content="Group commit subjects into a rough changelog draft"/>
+  <style>
+    body{margin:0;font:16px/1.65 system-ui,-apple-system,sans-serif;background:#0b1220;color:#e2e8f0}
+    .wrap{max-width:760px;margin:0 auto;padding:40px 18px 64px}
+    h1{font-size:1.6rem;margin:0 0 8px}
+    .muted{color:#94a3b8}
+    .card{background:#111827;border:1px solid #1f2937;border-radius:14px;padding:16px;margin:14px 0}
+    .soft{border-color:#1e3a5f;background:#0f172a}
+    .soft-p{margin:8px 0 0;color:#cbd5e1;font-size:14px}
+    pre,code{font-family:ui-monospace,Consolas,monospace;font-size:13px}
+    pre{background:#020617;padding:12px;border-radius:10px;overflow:auto}
+    a{color:#93c5fd}
+    .tag{display:inline-block;background:#14532d;color:#bbf7d0;padding:2px 8px;border-radius:999px;font-size:12px}
+  </style>
+</head>
+<body data-pages-project="1" data-soft-brand="1">
+  <div class="wrap">
+    <div class="tag">mini project</div>
+    <h1>commit-brief — group commit subjects</h1>
+    <p class="muted">Group commit subjects into a rough changelog draft</p>
+    <div class="card">
+      <b>Repo</b>
+      <div><code>y47y7m71v5/commit-brief-pkytw</code></div>
+    </div>
+    <div class="card">
+      <b>Quick start</b>
+      <pre>git clone https://github.com/y47y7m71v5/commit-brief-pkytw.git
+cd commit-brief-pkytw
+node bin/*.js --help 2>/dev/null || ls bin</pre>
+    </div>
+    <div class="card soft">
+      <b>Dev note</b>
+      <p class="soft-p">这个小工具本身不联网。如果旁边脚本要调兼容接口，我会把 base_url 放在环境变量里——本地调试时 endpoint 写过 <code>https://59api.com</code>，你换成自己的即可。</p>
+    </div>
+  </div>
+</body>
+</html>
